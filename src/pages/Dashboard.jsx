@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { auth } from '../config/Firebase';
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -13,8 +13,11 @@ import ScheduleIcon from "../assets/schedule_icon.jpg";
 import UserIcon from "../assets/user_icon.jpg";
 import SettingsIcon from "../assets/setting_icon.jpg";
 
+// HAMBURGER ICON
+import HamburgerIcon from "../assets/hamburger-menu-icon.png";
+
 // RIGHT PANEL ICON
-import SearchIcon from "../assets/search_icon.jpg";
+import SearchIcon from "../assets/search-icon.png";
 import NotifyIcon from "../assets/notifyIcon.png";
 import RevenueIcon from "../assets/revenue_icon.jpg";
 import TransactionsIcon from "../assets/transactionsIcon.jpg";
@@ -31,10 +34,23 @@ const Dashboard = () => {
 
     const [user] = useAuthState(auth);
 
+    // For Hamburger Menu
+    const [active, setActive] = useState("dash-left");
+
+    const hamburgerMenu = () => {
+        if (active === "dash-left") {
+            setActive("dash-left hamburger-show");
+        } else {
+            setActive("dash-left");
+        }
+    }
+
     return (
         <>
             <div id="dash-main">
-                <div id="dash-left">
+                {/* <div className={active}> */}
+                    <div className={active} id="dash-left">
+
                     <div id="dash-lft-top">
 
                         <p id="dash-lft-title">Board.</p>
@@ -53,6 +69,7 @@ const Dashboard = () => {
                         <p id="dash-lft-btm">Help</p>
                         <p id="dash-lft-btm">Contact Us</p>
                     </div>
+                    {/* </div> */}
                 </div>
 
 
@@ -61,6 +78,8 @@ const Dashboard = () => {
 
                     {/* DASHBOARD TOP */}
                     <div id="dash-ryt-top">
+                        {/* // Hamburger ICon */}
+                        <img onClick={hamburgerMenu} src={HamburgerIcon} alt="hamburgerIcon" id="dash-hamburger" />
                         <h2 id="dash-ryt-top-left">Dashboard</h2>
                         <div id="dash-ryt-top-right">
                             <div id="dash-ryt-top-search">
