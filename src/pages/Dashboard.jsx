@@ -2,7 +2,7 @@ import React from 'react';
 import { auth } from '../config/Firebase';
 import { useAuthState } from "react-firebase-hooks/auth";
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
 import "../styles/Dashboard.css";
 
@@ -23,6 +23,8 @@ import UsersIcon from "../assets/userssIcon.jpg";
 import DownArrow from "../assets/downArrow.jpg";
 import RedDot from "../assets/red-dot.jpg";
 import GreenDot from "../assets/green-dot.jpg";
+import YellowDot from "../assets/yellow_dot.jpg";
+import Piechart from '../components/Piechart';
 
 const Dashboard = () => {
 
@@ -134,18 +136,64 @@ const Dashboard = () => {
 
                     </div>
 
+                    {/* main */}
                     <div id="dash-ryt-sec3">
+
+                        {/* content1 */}
                         <div id="dash-ryt-sec3-products">
+                            {/* top */}
                             <div id="dash-ryt-sec3-pro-title">
                                 <p id="dash-ryt-sec3-pro-p">Top products</p>
                                 <div id="dash-ryt-sec3-pro-date">
                                     <p id="dash-ryt-sec3-pro-time">May - June 2021</p>
-                                    <img src={DownArrow} alt="arrow" />
+                                    <img id='dash-ryt-sec3-pro-arrow' src={DownArrow} alt="arrow" />
                                 </div>
                             </div>
-                            <div id="dash-ryt--sec3-pro-info">
-                                
+
+                            {/* content1-section2 */}
+                            <div id="dash-ryt-sec3-pro-info">
+                                {/* PIE CHART */}
+                                <div id="dash-ryt-sec3-pie">
+                                    <Piechart />
+                                </div>
+                                {/* PIE CHART INFO */}
+                                <div id="dash-ryt-sec3-pro-pie-info">
+                                    {
+                                        BarData.map((data) => {
+                                            return (
+                                                <div id="dash-ryt-sec3-pro-info-card">
+                                                    <div id="dash-ryt-sec3-pro-info-card-body">
+                                                        <img id="dash-ryt-sec3-info-img" src={data.img} alt={data.color} />
+                                                        <p id="dash-ryt-sec3-info-title">{data.title}</p>
+                                                    </div>
+                                                    <p id="dash-ryt-sec3-info-percentage">{data.percentage}</p>
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
                             </div>
+                        </div>
+
+
+                        {/* Content2 */}
+                        <div id="dash-ryt-sec3-schedule">
+                            <div id="dash-ryt-sec3-schedule-title">
+                                <p id="dash-ryt-sec3-schedule-today">Today’s schedule</p>
+                                <p id="dash-ryt-sec3-schedule-p">See All</p>
+                            </div>
+
+                            {
+                                ScheduleData.map((data) => {
+                                    return (
+                                        <div style={{borderLeft:`4px solid ${data.color}`}} id="dash-ryt-sec3-schedule-card">
+                                            <p id="dash-ryt-sec3-schedule-card-title">{data.title}</p>
+                                            <p id="dash-ryt-sec3-schedule-time">{data.time}</p>
+                                            <p id="dash-ryt-sec3-schedule-location">{data.location} </p>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
@@ -220,7 +268,41 @@ const CardData = [
     },
 ]
 
+const BarData = [
+    {
+        color: "#98D89E",
+        title: "Basic Tees",
+        percentage: "55%",
+        img: GreenDot
+    },
+    {
+        color: "#F6DC7D",
+        title: "Custom Short Pants",
+        percentage: "31%",
+        img: YellowDot
+    },
+    {
+        color: "#EE8484",
+        title: "Super Hoodies",
+        percentage: "14%",
+        img: RedDot
+    },
+]
 
+const ScheduleData = [
+    {
+        title: "Meeting with suppliers from Kuta Bali",
+        time: "14.00-15.00",
+        location: "at Sunset Road, Kuta, Bali ",
+        color: "#9BDD7C"
+    },
+    {
+        title: "Check operation at Giga Factory 1",
+        time: "18.00-20.00",
+        location: "at Central Jakarta ",
+        color: "#6972C3"
+    },
+]
 
 
 export default Dashboard;

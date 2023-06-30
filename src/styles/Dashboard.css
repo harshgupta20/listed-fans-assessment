@@ -1,6 +1,6 @@
 #dash-main {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     padding: 30px;
     justify-content: space-between;
@@ -9,7 +9,7 @@
 
 #dash-left {
     width: 18%;
-    height: 100%;
+    height: 100vh;
     border-radius: 30px;
     background-color: #000;
     padding: 60px 50px;
@@ -74,6 +74,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
     
 }
 #dash-ryt-top-left{
@@ -85,24 +86,31 @@
     align-items: center;
 }
 #dash-ryt-top-search{
-    padding: 20px;
+    padding: 5px 15px;
     margin-right: 20px;
+    background-color: #fff;
+    border-radius: 20px;
 }
 #dash-ryt-top-input{
     outline: none;
     border: none;
-    padding: 10px;
+    padding: 4px;
     border-radius: 20px;
     color: #B0B0B0;
     font-size: 14px;
     font-family: 'Lato', sans-serif;
 }
+#dash-ryt-top-img{
+    mix-blend-mode: multiply;
+}
 #dash-ryt-top-notify{
     width: 18px;
     margin-right: 20px;
+    mix-blend-mode: multiply;
 }
 #dash-ryt-top-profile{
     width: 35px;
+    mix-blend-mode: multiply;
 }
 
 
@@ -173,4 +181,118 @@
 }
 #dash-sec2-indicator2{
     margin-left: 30px;
+}
+
+
+
+/* SECTION3 */
+#dash-ryt-sec3{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+#dash-ryt-sec3-products{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    /* border: 1px solid red; */
+}
+#dash-ryt-sec3-pro-title{
+    display: flex;
+    justify-content: space-between;
+}
+#dash-ryt-sec3-pro-p{
+    font-size: 16px;
+    font-weight: 700;
+}
+#dash-ryt-sec3-pro-info{
+    display: flex;
+    margin-top: 20px;
+}
+#dash-ryt-sec3-pro-date{
+    display: flex;
+    align-items: center;
+}
+#dash-ryt-sec3-pro-time{
+    font-size: 14px;
+}
+#dash-ryt-sec3-pro-arrow{
+    width: 12px;
+    height: 6px;
+    margin-left: 10px;
+}
+#dash-ryt-sec3-pie{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+#dash-ryt-sec3-pro-info-card-body{
+    display: flex;
+    align-items: center;
+}
+#dash-ryt-sec3-info-img{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+#dash-ryt-sec3-info-title{
+    font-weight: 700;
+}
+#dash-ryt-sec3-info-percentage{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+#dash-ryt-sec3-pro-pie-info{
+    display: flex;
+    flex-direction: column;
+}
+#dash-ryt-sec3-pro-info-card{
+    margin-bottom: 20px;
+}
+
+/* SECTION3-CONTENT2 */
+#dash-ryt-sec3-schedule{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+}
+#dash-ryt-sec3-schedule-title{
+    display: flex;
+    justify-content: space-between;
+}
+#dash-ryt-sec3-schedule-today{
+    font-size: 16px;
+    font-weight: 700;
+}
+#dash-ryt-sec3-schedule-p{
+    color:  #999;
+    font-size: 14px;
+}
+#dash-ryt-sec3-schedule-card{
+    color:  #999;
+    padding: 10px;
+    margin-top: 20px;
+}
+#dash-ryt-sec3-schedule-card-title{
+    color: #666;
+    font-size: 16px;
+    font-weight: 600;
+}
+#dash-ryt-sec3-schedule-time{
+    font-size: 14px;
+    margin: 5px 0;
+}
+#dash-ryt-sec3-schedule-location{
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    
 }

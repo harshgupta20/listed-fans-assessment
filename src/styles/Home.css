@@ -55,12 +55,18 @@
     font-size: .8rem;
     font-weight: 500;
 }
-
+#home-ryt-pl-signup-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 #home-ryt-pl-signup-btn1 {
+    width: 48%;
     cursor: pointer;
 }
 
 #home-ryt-pl-signup-btn2 {
+    width: 48%  ;
     cursor: pointer;
 }
 
@@ -87,7 +93,7 @@
 }
 
 #home-ryt-pl-email-input {
-    background-color: #EAEAEA;
+    background-color: #F5F5F5;
     /* font-size: .8rem; */
     border: none;
     outline: none;
@@ -106,7 +112,7 @@
 }
 
 #home-ryt-pl-password-input {
-    background-color: #EAEAEA;
+    background-color: #F5F5F5;
     /* font-size: .8rem; */
     border: none;
     outline: none;
@@ -138,4 +144,18 @@ input[type='password'] {
     background: #000;
     padding: 10px;
     cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #home-left-panel{
+        display: none;
+    }
+    #home-right-panel{
+        width: 90%;
+        margin: auto;
+    }
 }
