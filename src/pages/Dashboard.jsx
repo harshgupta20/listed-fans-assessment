@@ -15,7 +15,7 @@ import SettingsIcon from "../assets/setting_icon.jpg";
 
 // RIGHT PANEL ICON
 import SearchIcon from "../assets/search_icon.jpg";
-import NotifyIcon from "../assets/notify.jpg";
+import NotifyIcon from "../assets/notifyIcon.png";
 import RevenueIcon from "../assets/revenue_icon.jpg";
 import TransactionsIcon from "../assets/transactionsIcon.jpg";
 import LikeIcon from "../assets/likeIcon.jpg";
@@ -24,6 +24,7 @@ import DownArrow from "../assets/downArrow.jpg";
 import RedDot from "../assets/red-dot.jpg";
 import GreenDot from "../assets/green-dot.jpg";
 import YellowDot from "../assets/yellow_dot.jpg";
+import SingleUserIcon from "../assets/Sample_User_Icon.png";
 import Piechart from '../components/Piechart';
 
 const Dashboard = () => {
@@ -67,7 +68,7 @@ const Dashboard = () => {
                                 <img id="dash-ryt-top-img" src={SearchIcon} alt="SearchIcon" />
                             </div>
                             <img id="dash-ryt-top-notify" src={NotifyIcon} alt="notifyIcon" />
-                            <img id="dash-ryt-top-profile" src={user?.photoURL} alt="profile_pic" />
+                            <img id="dash-ryt-top-profile" src={user?.photoURL || SingleUserIcon} alt="profile_pic" />
                         </div>
                     </div>
 
@@ -109,30 +110,33 @@ const Dashboard = () => {
                         </div>
 
                         {/* jkdf000 */}
-                        <LineChart
-                            width={1000}
-                            height={300}
-                            data={data}
-                            margin={{
-                                top: 35,
-                                right: 0,
-                                left: 0,
-                                bottom: 35
-                            }}
-                        >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" />
-                            <YAxis />
-                            <Tooltip />
-                            {/* <Legend /> */}
-                            <Line
-                                type="monotone"
-                                dataKey="pv"
-                                stroke="#9bdd7c"
-                                activeDot={{ r: 8 }}
-                            />
-                            <Line type="monotone" dataKey="uv" stroke="#e9a0a0" />
-                        </LineChart>
+                        <div id="dash-sec2-chart">
+
+                            <LineChart
+                                width={1000}
+                                height={300}
+                                data={data}
+                                margin={{
+                                    top: 35,
+                                    right: 0,
+                                    left: 0,
+                                    bottom: 35
+                                }}
+                            >
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" />
+                                <YAxis />
+                                <Tooltip />
+                                {/* <Legend /> */}
+                                <Line
+                                    type="monotone"
+                                    dataKey="pv"
+                                    stroke="#9bdd7c"
+                                    activeDot={{ r: 8 }}
+                                />
+                                <Line type="monotone" dataKey="uv" stroke="#e9a0a0" />
+                            </LineChart>
+                        </div>
 
                     </div>
 
@@ -186,7 +190,7 @@ const Dashboard = () => {
                             {
                                 ScheduleData.map((data) => {
                                     return (
-                                        <div style={{borderLeft:`4px solid ${data.color}`}} id="dash-ryt-sec3-schedule-card">
+                                        <div style={{ borderLeft: `4px solid ${data.color}` }} id="dash-ryt-sec3-schedule-card">
                                             <p id="dash-ryt-sec3-schedule-card-title">{data.title}</p>
                                             <p id="dash-ryt-sec3-schedule-time">{data.time}</p>
                                             <p id="dash-ryt-sec3-schedule-location">{data.location} </p>

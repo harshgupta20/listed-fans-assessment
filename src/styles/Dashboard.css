@@ -18,6 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 #dash-lft-title {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
@@ -26,13 +27,15 @@
     font-weight: 700;
     line-height: normal;
 }
-#dash-lft-ul{
+
+#dash-lft-ul {
     list-style-type: none;
     margin: 40px 0;
     text-align: left;
 
 }
-#dash-lft-li{
+
+#dash-lft-li {
     display: flex;
     align-items: center;
     width: 100%;
@@ -40,19 +43,24 @@
     font-weight: 200;
     margin-bottom: 8px;
 }
-#dash-lft-li-img{
+
+#dash-lft-li-img {
     padding: 10px 20px 10px 0;
 }
-#dash-lft-li-p{
+
+#dash-lft-li-p {
     font-size: 16px;
 }
-#dash-lft-bottom{
+
+#dash-lft-bottom {
     align-items: baseline;
 }
-#dash-lft-bottom{
-    font-family: 'Montserrat', sans-serif;   
+
+#dash-lft-bottom {
+    font-family: 'Montserrat', sans-serif;
 }
-#dash-lft-btm{
+
+#dash-lft-btm {
     font-size: 12px;
     font-weight: 200;
     cursor: pointer;
@@ -63,35 +71,40 @@
 
 
 /*------- RIGHT PANEL -------*/
-#dash-right{
+#dash-right {
     width: 80%;
     display: flex;
     flex-direction: column;
 }
-#dash-ryt-top{
+
+#dash-ryt-top {
     /* border: 2px solid red; */
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    
+
 }
-#dash-ryt-top-left{
+
+#dash-ryt-top-left {
     font-family: 'Montserrat', sans-serif;
 
 }
-#dash-ryt-top-right{
+
+#dash-ryt-top-right {
     display: flex;
     align-items: center;
 }
-#dash-ryt-top-search{
+
+#dash-ryt-top-search {
     padding: 5px 15px;
     margin-right: 20px;
     background-color: #fff;
     border-radius: 20px;
 }
-#dash-ryt-top-input{
+
+#dash-ryt-top-input {
     outline: none;
     border: none;
     padding: 4px;
@@ -100,43 +113,51 @@
     font-size: 14px;
     font-family: 'Lato', sans-serif;
 }
-#dash-ryt-top-img{
+
+#dash-ryt-top-img {
     mix-blend-mode: multiply;
 }
-#dash-ryt-top-notify{
+
+#dash-ryt-top-notify {
     width: 18px;
     margin-right: 20px;
     mix-blend-mode: multiply;
 }
-#dash-ryt-top-profile{
+
+#dash-ryt-top-profile {
     width: 35px;
     mix-blend-mode: multiply;
 }
 
 
-#dash-sec1{
+#dash-sec1 {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-#dash-ryt-card{
+
+#dash-ryt-card {
     width: 22%;
     /* border: 2px solid red; */
     padding: 20px;
     background-color: #DDEFE0;
     border-radius: 20px;
 }
-#dash-ryt-card-image{
+
+#dash-ryt-card-image {
     text-align: right;
 }
-#dash-ryt-card-revenue-img{
+
+#dash-ryt-card-revenue-img {
     mix-blend-mode: multiply;
 }
-#dash-ryt-card-revenue-title{
+
+#dash-ryt-card-revenue-title {
     font-size: 13px;
     font-family: 'Lato', sans-serif;
 }
-#dash-ryt-card-revenue-amount{
+
+#dash-ryt-card-revenue-amount {
     font-size: 22px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
@@ -147,7 +168,7 @@
 
 
 /* SECTION2 CHART */
-#dash-sec2{
+#dash-sec2 {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -157,133 +178,165 @@
 
     /* border: 2px solid red; */
 }
-#dash-sec2-title{
+
+#dash-sec2-title {
     font-size: 16px;
     font-weight: 700;
 }
-#dash-sec2-date{
+
+#dash-sec2-date {
     font-size: 14px;
     color: #858585;
 }
-#dash-sec2-arrow-img{
+
+#dash-sec2-arrow-img {
     width: 8px;
     height: 5px;
     margin-left: 10px;
 }
-#dash-sec2-extras, #dash-sec2-time, #dash-sec2-indicator, #dash-sec2-indicator1, #dash-sec2-indicator2{
+
+#dash-sec2-extras,
+#dash-sec2-time,
+#dash-sec2-indicator,
+#dash-sec2-indicator1,
+#dash-sec2-indicator2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#dash-sec2-indicator1-p, #dash-sec2-indicator2-p{
+
+#dash-sec2-indicator1-p,
+#dash-sec2-indicator2-p {
     font-size: 14px;
     margin-left: 10px;
 }
-#dash-sec2-indicator2{
+
+#dash-sec2-indicator2 {
     margin-left: 30px;
 }
 
 
 
 /* SECTION3 */
-#dash-ryt-sec3{
+#dash-ryt-sec3 {
     display: flex;
     font-family: 'Montserrat', sans-serif;
 }
-#dash-ryt-sec3-products{
+
+#dash-ryt-sec3-products {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 30px;
     /* border: 1px solid red; */
 }
-#dash-ryt-sec3-pro-title{
+
+#dash-ryt-sec3-pro-title {
     display: flex;
     justify-content: space-between;
 }
-#dash-ryt-sec3-pro-p{
+
+#dash-ryt-sec3-pro-p {
     font-size: 16px;
     font-weight: 700;
 }
-#dash-ryt-sec3-pro-info{
+
+#dash-ryt-sec3-pro-info {
     display: flex;
     margin-top: 20px;
 }
-#dash-ryt-sec3-pro-date{
+
+#dash-ryt-sec3-pro-date {
     display: flex;
     align-items: center;
 }
-#dash-ryt-sec3-pro-time{
+
+#dash-ryt-sec3-pro-time {
     font-size: 14px;
 }
-#dash-ryt-sec3-pro-arrow{
+
+#dash-ryt-sec3-pro-arrow {
     width: 12px;
     height: 6px;
     margin-left: 10px;
 }
-#dash-ryt-sec3-pie{
+
+#dash-ryt-sec3-pie {
     width: 50%;
     /* border: 1px solid red; */
 }
-#dash-ryt-sec3-pro-info-card-body{
+
+#dash-ryt-sec3-pro-info-card-body {
     display: flex;
     align-items: center;
 }
-#dash-ryt-sec3-info-img{
+
+#dash-ryt-sec3-info-img {
     width: 10px;
     height: 10px;
     margin-right: 10px;
 }
-#dash-ryt-sec3-info-title{
+
+#dash-ryt-sec3-info-title {
     font-weight: 700;
 }
-#dash-ryt-sec3-info-percentage{
+
+#dash-ryt-sec3-info-percentage {
     font-size: 14px;
     margin-top: 5px;
     margin-left: 20px;
 }
-#dash-ryt-sec3-pro-pie-info{
+
+#dash-ryt-sec3-pro-pie-info {
     display: flex;
     flex-direction: column;
 }
-#dash-ryt-sec3-pro-info-card{
+
+#dash-ryt-sec3-pro-info-card {
     margin-bottom: 20px;
 }
 
 /* SECTION3-CONTENT2 */
-#dash-ryt-sec3-schedule{
+#dash-ryt-sec3-schedule {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 50px;
 }
-#dash-ryt-sec3-schedule-title{
+
+#dash-ryt-sec3-schedule-title {
     display: flex;
     justify-content: space-between;
 }
-#dash-ryt-sec3-schedule-today{
+
+#dash-ryt-sec3-schedule-today {
     font-size: 16px;
     font-weight: 700;
 }
-#dash-ryt-sec3-schedule-p{
-    color:  #999;
+
+#dash-ryt-sec3-schedule-p {
+    color: #999;
     font-size: 14px;
 }
-#dash-ryt-sec3-schedule-card{
-    color:  #999;
+
+#dash-ryt-sec3-schedule-card {
+    color: #999;
     padding: 10px;
     margin-top: 20px;
 }
-#dash-ryt-sec3-schedule-card-title{
+
+#dash-ryt-sec3-schedule-card-title {
     color: #666;
     font-size: 16px;
     font-weight: 600;
 }
-#dash-ryt-sec3-schedule-time{
+
+#dash-ryt-sec3-schedule-time {
     font-size: 14px;
     margin: 5px 0;
 }
-#dash-ryt-sec3-schedule-location{
+
+#dash-ryt-sec3-schedule-location {
     font-size: 14px;
 
 }
@@ -294,5 +347,139 @@
 
 
 @media screen and (max-width: 600px) {
-    
+    #dash-left {
+        display: none;
+    }
+
+
+
+
+    /*------- RIGHT PANEL -------*/
+    #dash-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #dash-ryt-top {
+        /* border: 2px solid red; */
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    #dash-ryt-top-left {
+        font-size: 16px;
+    }
+
+    #dash-ryt-top-search {
+        margin-right: 0px;
+        background: none;
+    }
+
+    #dash-ryt-top-input {
+        display: none;
+    }
+
+    #dash-ryt-top-img,
+    #dash-ryt-top-notify,
+    #dash-ryt-top-profile {
+        width: 16px;
+    }
+
+
+    /* SECTION1 */
+    #dash-sec1 {
+        flex-wrap: wrap;
+    }
+
+    #dash-ryt-card {
+        width: 45%;
+        /* border: 2px solid red; */
+        margin: 5px;
+    }
+
+    #dash-ryt-card-image {
+        text-align: right;
+    }
+
+    #dash-ryt-card-revenue-img {
+        mix-blend-mode: multiply;
+        width: 16px;
+    }
+
+    #dash-ryt-card-revenue-title {
+        font-size: 12px;
+    }
+
+    #dash-ryt-card-revenue-amount {
+        font-size: 18px;
+    }
+
+
+    /* SECTION2 */
+    #dash-sec2-chart {
+        overflow-x: scroll;
+    }
+
+    #dash-sec2-extras {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #dash-sec2-time {
+        margin: 5px 0 10px 0;
+    }
+
+    #dash-sec2-date {
+        font-size: 12px;
+    }
+
+    #dash-sec2-indicator1-p,
+    #dash-sec2-indicator2-p {
+        font-size: 12px;
+    }
+
+
+    /* SECTION3 */
+    #dash-ryt-sec3 {
+        flex-direction: column;
+    }
+
+    #dash-ryt-sec3-products {
+        width: 100%;
+    }
+
+    #dash-ryt-sec3-pro-title,
+    #dash-ryt-sec3-pro-info {
+        flex-direction: column;
+    }
+
+    #dash-ryt-sec3-pro-time {
+        font-size: 12px;
+        color: #858585;
+        margin: 5px 0 0 0;
+    }
+
+    #dash-ryt-sec3-pie {
+        width: 100%;
+    }
+
+    #dash-ryt-sec3-pro-pie-info {
+        margin-top: 20px;
+    }
+    #dash-ryt-sec3-schedule-p {
+        margin-top: 5px;
+    }
+
+    #dash-ryt-sec3-schedule {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
 }
